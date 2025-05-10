@@ -1,5 +1,3 @@
-
-
 # KhoborWala
 
 KhoborWala is a modern news publishing and blogging platform built with ASP.NET Core MVC. It allows users to read, create, and manage news posts across various categories such as National, International, Sports, and more. Authenticated users can create their own posts, view their personal post history, and receive notifications for interactions. The project features a clean, responsive Bootstrap-based UI, user authentication, role-based admin panel, and a notification system for post reactions.
@@ -7,6 +5,7 @@ KhoborWala is a modern news publishing and blogging platform built with ASP.NET 
 ---
 
 ## Features
+
 - Read news and blog posts by category (National, International, Sports, etc.)
 - User registration, login, and profile management
 - Authenticated users can create, edit, and delete their own posts
@@ -19,40 +18,59 @@ KhoborWala is a modern news publishing and blogging platform built with ASP.NET 
 ---
 
 ## Screenshots
+
 Add screenshots of your project here:
 
-![Home Page](images/homepage.png)
-![My Posts](images/myposts.png)
+![Home Page](assets/home_page%20-%20Copy.jpg)
+![Trending Page](assets/trending_page-%20Copy.jpg)
+![Notices Page](assets/notices_page%20-%20Copy.jpg)
+![Profile Page](assets/profile%20-%20Copy.jpg)
+![Admin Dashboard](assets/admin_dashboard.jpg)
+![Admin Route](assets/admin_route.jpg)
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
+
 - [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - SQL Server (or change connection string for your DB)
 - Node.js (for front-end asset management, optional)
 
 ### Installation
+
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/yourusername/KhoborWala.git
    cd KhoborWala
    ```
+
 2. **Restore NuGet packages:**
+
    ```bash
    dotnet restore
    ```
+
 3. **Apply database migrations:**
+
    ```bash
    dotnet ef database update
    ```
+
 4. **Run the application:**
+
    ```bash
    dotnet run
    ```
+
 5. **Open in browser:**
+<<<<<<< HEAD
       ```
+=======
+
+>>>>>>> 5514d4b (Update assets folder and README with screenshots and info)
    Visit `https://localhost:5001` or `http://localhost:5000`
       ```
 
@@ -67,6 +85,7 @@ Add screenshots of your project here:
 ---
 
 ## Usage
+
 - Register a new account or log in.
 - Browse posts by category or view trending/latest posts.
 - Create, edit, or delete your own posts from the "My Posts" section.
@@ -76,6 +95,7 @@ Add screenshots of your project here:
 ---
 
 ## Project Structure
+
 - `Controllers/` - Main MVC controllers for user features
 - `Areas/Admin/` - Admin area controllers, views, and models
 - `Models/` - Entity models (Post, User, Notice, etc.)
@@ -85,24 +105,28 @@ Add screenshots of your project here:
 ---
 
 ## Contributing
+
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
 ## License
+
 This project is licensed under the MIT License.
 
 ---
 
 ## Contact
+
 For questions or support, open an issue or contact the maintainer at [imrannazirudoy@gmail.com].
 
 ---
 
 ## Credits
+
 - Built with ASP.NET Core MVC
 - UI powered by Bootstrap
 
 ---
 
-> **Tip:** Add your own screenshots to the `images/` folder and update the links above.
+> **Tip:** Add your own screenshots to the `assets/` folder and update the links above if you add more images.

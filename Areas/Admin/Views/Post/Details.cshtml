@@ -1,0 +1,24 @@
+@model MediumClone.Models.Post
+@{
+    ViewData["Title"] = "Post Details";
+    Layout = "../Shared/_Layout.cshtml";
+}
+<h2>Post Details</h2>
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Title</dt>
+        <dd class="col-sm-10">@Model.Title</dd>
+        <dt class="col-sm-2">Content</dt>
+        <dd class="col-sm-10">@Model.Content</dd>
+        <dt class="col-sm-2">Category</dt>
+        <dd class="col-sm-10">@Model.Category</dd>
+        <dt class="col-sm-2">Created At</dt>
+        <dd class="col-sm-10">@Model.CreatedAt.ToString("yyyy-MM-dd HH:mm")</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

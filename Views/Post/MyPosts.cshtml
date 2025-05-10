@@ -1,0 +1,30 @@
+@model IEnumerable<MediumClone.Models.Post>
+@{
+    ViewData["Title"] = "My Posts";
+    Layout = "../Shared/_Layout.cshtml";
+}
+<h2>My Posts</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.Title</td>
+                <td>@post.Category</td>
+                <td>@post.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>
+                    <a class="btn btn-danger btn-sm" href="/post/delete/@post.Id">Delete</a>
+                    <a class="btn btn-info btn-sm" href="/post/details/@post.Id">View</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

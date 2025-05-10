@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\CSE__ALL\\Academic\\kw - Copy - Copy - Copy\\MediumClone\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MediumClone.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MediumClone.to3ewytruf.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\CSE__ALL\\Academic\\kw - Copy - Copy - Copy\\MediumClone\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\CSE__ALL\\Academic\\kw - Copy - Copy - Copy\\MediumClone\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\CSE__ALL\\Academic\\kw - Copy - Copy - Copy\\MediumClone\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MediumClone.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MediumClone.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MediumClone.props",
+      "PackagePath": "build\\MediumClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MediumClone.props",
+      "PackagePath": "buildMultiTargeting\\MediumClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MediumClone.props",
+      "PackagePath": "buildTransitive\\MediumClone.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

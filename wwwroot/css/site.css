@@ -1,0 +1,117 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1,
+h2,
+h3 {
+  color: #343a40;
+}
+
+/* Updated Navbar Styles */
+.navbar {
+  background-color: #000000; /* Black background color */
+}
+
+.navbar .nav-link:hover {
+  color: #d4d4d4; /* Light gray hover color */
+}
+
+.navbar .nav-link {
+  color: #ffffff; /* White font color */
+}
+
+.navbar-brand {
+  color: #ffffff; /* White brand color */
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #d4d4d4; /* Light gray hover color */
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .container {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Fix for post management table scroll and sticky create button */
+.posts-table-container {
+  max-height: 60vh;
+  overflow-y: auto;
+  margin-top: 60px; /* Space for sticky button */
+}
+
+.sticky-create-btn {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: move;
+}
+
+@media (max-width: 768px) {
+  .sticky-create-btn {
+    right: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+}

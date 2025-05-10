@@ -1,0 +1,32 @@
+@model MediumClone.Models.Post
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+
+<h1 class="mb-4">Delete Post</h1>
+
+<div class="mb-3">
+    <h3>@Model.Title</h3>
+    <p>@Model.Content</p>
+    <p><strong>Created At:</strong> @Model.CreatedAt.ToString("g")</p>
+    <p><strong>View Count:</strong> @Model.ViewCount</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+</body>
+</html>

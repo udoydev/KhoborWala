@@ -1,0 +1,25 @@
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Dashboard";
+}
+<div class="container">
+    <h1 class="mb-4">Admin Dashboard</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Posts</h5>
+                    <a href="/admin/post" class="btn btn-light">Go to Posts</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Users</h5>
+                    <a href="/admin/user" class="btn btn-light">Go to Users</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

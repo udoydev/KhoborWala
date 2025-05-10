@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MediumClone.Models.Post>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="mb-4">Latest News</h1>
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        @foreach (var post in Model)
+        {
+            var likeCount = ViewBag.LikeCounts != null && ViewBag.LikeCounts.ContainsKey(post.Id) ?
+            ViewBag.LikeCounts[post.Id] : 0;
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@post.Title</h5>
+                        <p class="card-text">
+                            @(string.IsNullOrEmpty(post.Content) ? "" : post.Content.Substring(0, Math.Min(post.Content.Length,
+                                                100)) + "...")
+                </p>
+                <p class="card-text"><small class="text-muted">Category: @post.Category</small></p>
+                <p class="card-text"><small class="text-muted">Views: @post.ViewCount</small></p>
+                <form asp-controller="Post" asp-action="React" asp-route-id="@post.Id" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-outline-success btn-sm">
+                        👍 Like <span class="badge bg-success">@likeCount</span>
+                    </button>
+                </form>
+                <a asp-controller="Post" asp-action="Details" asp-route-id="@post.Id" class="btn btn-primary">Read
+                    More</a>
+                @if (User.Identity.IsAuthenticated && User.Identity.Name == post.Username)
+                        {
+                            <a asp-controller="Post" asp-action="Edit" asp-route-id="@post.Id" class="btn btn-warning ms-2">Edit</a>
+                            <a asp-controller="Post" asp-action="Delete" asp-route-id="@post.Id"
+                                class="btn btn-danger ms-2">Delete</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No posts available.</p>
+}
+@* <a asp-controller="Post" asp-action="Create" class="btn btn-success sticky-create-btn">Create New Post</a> *@

@@ -1,0 +1,50 @@
+@model IEnumerable<MediumClone.Models.Post>
+@{
+    Layout = "_Layout";
+}
+
+<h1 class="mb-4">Manage Posts</h1>
+
+<div class="posts-table-container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Created At</th>
+                <th>View Count</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var likeCount = ViewBag.LikeCounts != null && ViewBag.LikeCounts.ContainsKey(item.Id) ?
+                ViewBag.LikeCounts[item.Id] : 0;
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.CreatedAt.ToString("g")</td>
+                    <td>@item.ViewCount</td>
+                    <td>@item.Category</td>
+                    <td>
+                        <form asp-controller="Post" asp-action="React" asp-route-id="@item.Id" method="post"
+                            class="d-inline">
+                            <button type="submit" class="btn btn-outline-success btn-sm">
+                                👍 Like <span class="badge bg-success">@likeCount</span>
+                            </button>
+                        </form>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">View</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@if (ViewData["CurrentCategory"] == null || ViewData["CurrentCategory"].ToString() == "All")
+{
+    <div style="position:sticky;top:0;z-index:100;background:#fff;padding:16px 0 8px 0;">
+        <a asp-action="Create" class="btn btn-success">Create New Post</a>
+    </div>
+}

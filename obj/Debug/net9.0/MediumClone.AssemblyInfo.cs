@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediumClone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb181b6f95d454f9db013f0631f43eae76bae9e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediumClone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediumClone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

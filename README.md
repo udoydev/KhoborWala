@@ -22,7 +22,7 @@ KhoborWala is a modern news publishing and blogging platform built with ASP.NET 
 Add screenshots of your project here:
 
 ![Home Page](assets/home_page%20-%20Copy.jpg)
-![Trending Page](assets/trending_page-%20Copy.jpg)
+![Trending Page](assets/trending_page.jpg)
 ![Notices Page](assets/notices_page%20-%20Copy.jpg)
 ![Profile Page](assets/profile%20-%20Copy.jpg)
 ![Admin Dashboard](assets/admin_dashboard.jpg)

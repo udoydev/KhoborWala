@@ -58,8 +58,10 @@ Add screenshots of your project here:
 
 
 7. **Admin Credential:**
-   --Email : admin@blog.com
+   ```
+    --Email : admin@blog.com
    --Pass  : Admin@123
+   ```
 ---
 
 ## Usage

@@ -14,6 +14,7 @@ KhoborWala is a modern news publishing and blogging platform built with ASP.NET 
 - Like/react to posts, with notifications sent to post owners
 - Admin panel for managing users, posts, and categories
 - Responsive Bootstrap UI for desktop and mobile
+- Post will be seen in Trending and Latest as per Trend and Post Time
 
 ---
 

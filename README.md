@@ -52,10 +52,12 @@ Add screenshots of your project here:
    dotnet run
    ```
 5. **Open in browser:**
+      ```
    Visit `https://localhost:5001` or `http://localhost:5000`
+      ```
 
-   ```
-6. **Admin Credential:**
+
+7. **Admin Credential:**
    --Email : admin@blog.com
    --Pass  : Admin@123
 ---

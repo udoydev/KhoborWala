@@ -30,6 +30,44 @@ Add screenshots of your project here:
 
 ---
 
+## Project Structure
+
+```
+KhoborWala/
+├── appsettings.Development.json
+├── appsettings.json
+├── LICENSE
+├── MediumClone.csproj
+├── MediumClone.sln
+├── Program.cs
+├── README.md
+├── Areas/
+│   ├── Admin/
+│   │   ├── Controllers/
+│   │   ├── Models/
+│   │   └── Views/
+│   └── Identity/
+├── assets/
+├── bin/
+├── Controllers/
+├── MediumClone/
+├── Migrations/
+├── Models/
+├── obj/
+├── Properties/
+├── Views/
+│   ├── Home/
+│   ├── Post/
+│   ├── Shared/
+│   └── User/
+└── wwwroot/
+    ├── css/
+    ├── js/
+    └── lib/
+```
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -71,7 +109,7 @@ Add screenshots of your project here:
 
 6. **Admin Credential:**
 
-   ```
+   ```text
    Email: admin@blog.com
    Pass: Admin@123
    ```
@@ -85,16 +123,6 @@ Add screenshots of your project here:
 - Create, edit, or delete your own posts from the "My Posts" section.
 - Like/react to posts and receive notifications.
 - Admins can manage users, posts, and categories from the admin panel.
-
----
-
-## Project Structure
-
-- `Controllers/` - Main MVC controllers for user features
-- `Areas/Admin/` - Admin area controllers, views, and models
-- `Models/` - Entity models (Post, User, Notice, etc.)
-- `Views/` - Razor views for all pages
-- `wwwroot/` - Static files (CSS, JS, images)
 
 ---
 

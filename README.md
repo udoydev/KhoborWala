@@ -54,6 +54,10 @@ Add screenshots of your project here:
 5. **Open in browser:**
    Visit `https://localhost:5001` or `http://localhost:5000`
 
+   ```
+6. **Admin Credential:**
+   --Email : admin@blog.com
+   --Pass  : Admin@123
 ---
 
 ## Usage
